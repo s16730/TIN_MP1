@@ -1,5 +1,6 @@
 @import "simple/text";
 @import "simple/password";
+@import "simple/textarea";
 @import "simple/submit";
 
 
@@ -14,6 +15,14 @@
 
   &.field--text {
     @extend %field--text;
+  }
+
+  &.field--autocomplete {
+    @extend %field--text;
+  }
+
+  &.field--textarea {
+    @extend %field--textarea;
   }
 
   &.field--password {

@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Biblioteczka</title>
-  <link rel="stylesheet" type="text/css" href="../dist/main.css">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../dist/main.css"
+  >
 </head>
 <body>
 
@@ -22,12 +25,12 @@
 
     <div class="account account--logged-out">
       <a class="account__button button"
-        href="register.html"
+         href="register.html"
       >
         Zarejestruj się
       </a>
       <a class="account__button button"
-        href="login.html"
+         href="login.html"
       >
         Zaloguj się
       </a>
@@ -46,7 +49,55 @@
 
 
 <main>
-
+  <section class="section section--author">
+    <form class="form form--author">
+      <div class="container author author--full">
+        <div class="author__photo">
+          <img src="../images/960x960.png"
+               alt="Zdjęcie autora"
+          >
+        </div>
+        <div class="author__info">
+          <div class="field field--text">
+            <label class="field__label">
+              <span class="field__label__text visually-hidden">Imię</span>
+              <input class="field__label__input"
+                     placeholder="Imię"
+                     name="title"
+                     type="text"
+              >
+            </label>
+          </div>
+          <div class="field field--text">
+            <label class="field__label">
+              <span class="field__label__text visually-hidden">Nazwisko</span>
+              <input class="field__label__input"
+                     placeholder="Nazwisko"
+                     name="title"
+                     type="text"
+              >
+            </label>
+          </div>
+        </div>
+        <div class="author__description">
+          <div class="field field--textarea">
+            <label class="field__label">
+              <span class="field__label__text">Bio:</span>
+              <textarea class="field__label__input"
+                        name="description"
+              ></textarea>
+            </label>
+          </div>
+        </div>
+        <div class="field field--submit">
+          <input class="field__input button"
+                 type="submit"
+                 value="Zapisz"
+          >
+        </div>
+      </div>
+    </form>
+  </section>
 </main>
 
 <footer class="footer">
