@@ -1,0 +1,26 @@
+@import "simple/text";
+@import "simple/password";
+@import "simple/submit";
+
+
+.field {
+  width: 400px;
+  max-width: 100%;
+
+  input {
+    width: 100%;
+    display: block;
+  }
+
+  &.field--text {
+    @extend %field--text;
+  }
+
+  &.field--password {
+    @extend %field--password;
+  }
+
+  &.field--submit {
+    @extend %field--submit;
+  }
+}
