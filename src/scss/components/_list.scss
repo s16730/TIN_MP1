@@ -17,6 +17,22 @@
       &:hover {
         background: $main-background;
       }
+
+      @media (max-width: 1280px) {
+        flex-basis: calc((100% / 4) - 20px);
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: calc((100% / 3) - 20px);
+      }
+
+      @media (max-width: 640px) {
+        flex-basis: calc((100% / 2) - 20px);
+      }
+
+      @media (max-width: 480px) {
+        flex-basis: calc((100%) - 20px);
+      }
     }
   }
 

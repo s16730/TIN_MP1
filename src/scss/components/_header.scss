@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+
+    @media (max-width: 680px) {
+      flex-direction: column;
+    }
   }
 
 
@@ -22,6 +26,16 @@
       &__item {
         margin-right: 10px;
         color: $white;
+      }
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+
+        &__item {
+          &:nth-of-type(n + 1){
+            margin-top: 15px;
+          }
+        }
       }
     }
   }
